@@ -1,6 +1,9 @@
-package com.miguelk.APIUsers;
+package com.miguelk.APIUsers.Users;
 
+import com.miguelk.APIUsers.Cars.CarModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "tb_register")
@@ -12,6 +15,10 @@ public class UserModel {
     private String name;
     private int age;
     private String email;
+
+    @ManyToOne
+    @JoinColumn(name = "cars_id")
+    private CarModel cars;
 
     public UserModel() {
     }

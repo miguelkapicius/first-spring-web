@@ -1,4 +1,4 @@
-package com.miguelk.APIUsers;
+package com.miguelk.APIUsers.Users;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
